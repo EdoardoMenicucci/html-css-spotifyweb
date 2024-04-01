@@ -87,7 +87,7 @@ h1 {
 }
 
 h2 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 h3 {
@@ -97,6 +97,15 @@ h3 {
 h4 {
     font-size: 0.2rem;
 }
+
+.no-xs {
+    display: none;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
 
 
 
@@ -130,6 +139,7 @@ main {
     height: calc(100vh - 12rem);
     margin-left: 3.5rem;
     border: 2px solid #141922;
+    overflow: auto;
 
 }
 
@@ -160,23 +170,26 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
 }
 
-nav img {
-    margin-top: 1rem;
-}
 
 nav i {
     display: block;
     color: white;
-    font-size: 2.3rem;
-    line-height: 2.3rem;
-    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+nav img {
+    width: 2rem;
 }
 
 .little {
     font-size: 1.2rem;
     line-height: 1.2rem;
+    color: grey;
+    margin-left: 1rem;
 }
 
 nav img:first-child {
@@ -193,7 +206,6 @@ nav img:first-child {
 .sez-music {
     color: #797b80;
     margin: 1rem;
-    /* justify-content: space-around; */
 }
 
 .sez-music div {
@@ -206,26 +218,149 @@ section {
 
 section h1 {
     color: white;
+    margin-bottom: 1rem;
+}
+
+.macro-section {}
+
+.macro-section h1 {
+    font-size: 1.5rem;
 }
 
 .song-container {
+    padding: 1rem 0;
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 
 }
 
 .song {
-    width: 200px;
-    height: 250px;
+    width: 180px;
+    height: 230px;
 }
 
 .song h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
 }
 
-.song h3 {
+.song h3,
+.macro-section h3 {
     font-size: 0.8rem;
     color: #808080;
+}
+
+.grey {
+    color: #797b80;
+    font-size: bolder;
+}
+
+/* Footer */
+
+.foot-left {
+    margin: 1rem;
+}
+
+.current-play {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+footer h2,
+footer h3 {
+    color: white;
+    padding: 0.2rem;
+}
+
+footer h3 {
+    font-size: 0.6rem;
+}
+
+.flex-footer {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer i {
+    color: #808080;
+}
+
+/* Media queries */
+
+/* S */
+
+@media screen and (min-width: 630px) {
+
+    .no-s {
+        display: none;
+    }
+
+    .no-xs {
+        display: block;
+    }
+
+    main {
+        margin-left: 14rem;
+    }
+
+    nav {
+        width: 14rem;
+    }
+
+    .content-nav {
+        padding: 1rem 0.5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: white;
+        gap: 0.5rem;
+    }
+
+    .content-nav div {
+        margin-bottom: 1rem;
+    }
+
+    .content-nav img,
+    .content-nav i {
+        width: 1.6rem;
+        font-size: 1.6rem;
+    }
+
+    #big-logo {
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .plus {
+        background-color: #808080;
+        padding: 0.5rem;
+        padding-right: 0.8rem;
+        margin-right: 0.5rem;
+    }
+
+    .plus i {
+        color: black;
+        font-size: 2.1rem;
+        line-height: 2.1rem;
+    }
+
+
+
+    .underline {
+        border-bottom: 1px solid white;
+        padding-bottom: 0.5rem;
+    }
+
+    .little {
+        margin-right: 0.5rem;
+        margin-left: 0rem;
+    }
+
+    .profile {
+        margin-right: 0.5rem;
+    }
+
 }
