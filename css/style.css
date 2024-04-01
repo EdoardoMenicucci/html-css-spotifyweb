@@ -221,7 +221,6 @@ section h1 {
     margin-bottom: 1rem;
 }
 
-.macro-section {}
 
 .macro-section h1 {
     font-size: 1.5rem;
@@ -259,6 +258,10 @@ section h1 {
 
 /* Footer */
 
+footer {
+    color: white;
+}
+
 .foot-left {
     margin: 1rem;
 }
@@ -287,6 +290,66 @@ footer h3 {
 
 footer i {
     color: #808080;
+}
+
+.foot-center i {
+    color: white;
+}
+
+.foot-left {
+    width: 33.3333%;
+}
+
+.foot-center {
+    width: 33.3333%;
+    text-align: center;
+}
+
+.foot-center i {
+    padding: 0.5rem 0.2rem;
+}
+
+.sez-progress-bar {
+    font-size: 10px;
+}
+
+.progress-bar {
+    position: relative;
+    height: 8px;
+    width: 80%;
+    background-color: #808080;
+    margin: 0 0.3rem;
+}
+
+.progress-bar-marked-video {
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    width: 38%;
+    height: 10px;
+    background-color: #444;
+}
+
+.foot-right {
+    width: 33.3333%;
+}
+
+.foot-right i {
+    padding: 0.5rem 0.2rem;
+}
+
+.sez-progress-bar-audio {
+    width: 45%;
+}
+
+.progress-bar-marked-audio {
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    width: 17%;
+    height: 10px;
+    background-color: #444;
+    z-index: 1;
 }
 
 /* Media queries */
