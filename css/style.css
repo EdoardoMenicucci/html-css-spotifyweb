@@ -7,6 +7,15 @@
     font-family: sans-serif;
 }
 
+/* Reset Button */
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+
 /* Common */
 
 .flex {
@@ -33,10 +42,28 @@
     flex-wrap: wrap;
 }
 
+.flex-center-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .flex-no-center {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+}
+
+.flex-web {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .text-center {
@@ -51,22 +78,154 @@
     margin: 3vh 0;
 }
 
+img {
+    width: 100%;
+}
+
 h1 {
-    font-size: 8vh;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 4.5vh;
+    font-size: 0.7rem;
 }
 
 h3 {
-    font-size: 3vh;
+    font-size: 0.4rem;
 }
 
 h4 {
-    font-size: 2.5vh;
+    font-size: 0.2rem;
 }
 
 
 
+/* Flex-Web-XS*/
+
+
+/* Macreo Sezioni */
+
+
+nav {
+    width: 3.5rem;
+    background-color: black;
+    height: calc(100vh);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-bottom: calc(6rem + 2px);
+}
+
+header {
+    width: calc(100% - 3.5rem);
+    margin-left: 3.5rem;
+    background-color: #080b12;
+    height: 6rem;
+    border: 1px solid #080b12;
+}
+
+main {
+    width: calc(100% - 3.5rem);
+    background-color: #141922;
+    height: calc(100vh - 12rem);
+    margin-left: 3.5rem;
+    border: 2px solid #141922;
+
+}
+
+footer {
+    width: 100%;
+    background-color: #282828;
+    height: calc(6rem + 2px);
+    border: 2px solid #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Header */
+
+button {
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 0.7rem 1rem;
+    margin-right: 1rem;
+}
+
+/* NavBar */
+
+.content-nav {
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav img {
+    margin-top: 1rem;
+}
+
+nav i {
+    display: block;
+    color: white;
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    margin-top: 1rem;
+}
+
+.little {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+nav img:first-child {
+    margin-top: 0;
+}
+
+.profile {
+    border-radius: 50%;
+    background-color: #808080;
+}
+
 /* Main */
+
+.sez-music {
+    color: #797b80;
+    margin: 1rem;
+    /* justify-content: space-around; */
+}
+
+.sez-music div {
+    margin: 1rem 0.7rem;
+}
+
+section {
+    margin: 1rem;
+}
+
+section h1 {
+    color: white;
+}
+
+.song-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.song {
+    width: 200px;
+    height: 250px;
+}
+
+.song h2 {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.song h3 {
+    font-size: 0.8rem;
+    color: #808080;
+}
