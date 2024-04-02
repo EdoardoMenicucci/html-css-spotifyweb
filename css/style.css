@@ -28,6 +28,7 @@ button {
     align-items: center;
 }
 
+
 .flex-center {
     display: flex;
     justify-content: center;
@@ -66,6 +67,10 @@ button {
     justify-content: space-between;
 }
 
+.shrink {
+    flex-shrink: 1;
+}
+
 .text-center {
     text-align: center;
 }
@@ -102,11 +107,18 @@ h4 {
     display: none;
 }
 
+.no-xs-inline {
+    display: none;
+}
+
 .margin-top {
     margin-top: 1rem;
 }
 
-
+.grey {
+    color: #797b80;
+    font-size: bolder;
+}
 
 
 /* Flex-Web-XS*/
@@ -196,9 +208,19 @@ nav img:first-child {
     margin-top: 0;
 }
 
+.home {
+    border-left: 2px solid rgb(0, 149, 0);
+}
+
 .profile {
     border-radius: 50%;
     background-color: #808080;
+}
+
+.underline i {
+    position: relative;
+    left: -0.45rem;
+    bottom: 0.8rem;
 }
 
 /* Main */
@@ -210,6 +232,10 @@ nav img:first-child {
 
 .sez-music div {
     margin: 1rem 0.7rem;
+}
+
+.evidenza {
+    border-bottom: 2px solid rgb(0, 149, 0);
 }
 
 section {
@@ -236,8 +262,8 @@ section h1 {
 }
 
 .song {
-    width: 180px;
-    height: 230px;
+    width: 200px;
+    height: 250px;
 }
 
 .song h2 {
@@ -251,10 +277,7 @@ section h1 {
     color: #808080;
 }
 
-.grey {
-    color: #797b80;
-    font-size: bolder;
-}
+
 
 /* Footer */
 
@@ -306,8 +329,16 @@ footer i {
 }
 
 .foot-center i {
-    padding: 0.5rem 0.2rem;
+    padding: 0 0.8rem;
+    flex-shrink: 1;
 }
+
+.top-center {
+    position: relative;
+    top: -1rem;
+}
+
+
 
 .sez-progress-bar {
     font-size: 10px;
@@ -352,9 +383,26 @@ footer i {
     z-index: 1;
 }
 
+/* Hover */
+
+header button:hover {
+    padding: 1rem 1.5rem;
+}
+
+nav .grey:hover {
+    color: white;
+}
+
+.playlist:hover .plus {
+    color: white;
+}
+
+.sez-music h2:hover {
+    color: white;
+}
+
 /* Media queries */
 
-/* S */
 
 @media screen and (min-width: 630px) {
 
@@ -364,6 +412,10 @@ footer i {
 
     .no-xs {
         display: block;
+    }
+
+    .no-xs-inline {
+        display: inline-block;
     }
 
     main {
@@ -422,6 +474,10 @@ footer i {
         padding-bottom: 0.5rem;
     }
 
+    .underline i {
+        position: static;
+    }
+
     .little {
         margin-right: 0.5rem;
         margin-left: 0rem;
@@ -438,6 +494,10 @@ footer i {
     .flex-footer {
         flex-direction: row;
         gap: 1rem;
+    }
+
+    .top-center i {
+        font-size: 2rem;
     }
 }
 
