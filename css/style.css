@@ -397,6 +397,11 @@ footer i {
         margin-bottom: 1rem;
     }
 
+    .song {
+        width: 160px;
+        height: 210px;
+    }
+
     .plus {
         background-color: #808080;
         padding: 0.5rem;
@@ -426,4 +431,19 @@ footer i {
         margin-right: 0.5rem;
     }
 
+}
+
+
+@media screen and (min-width: 860px) {
+    .flex-footer {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .song {
+        width: 180px;
+        height: 230px;
+    }
 }
