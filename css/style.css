@@ -231,6 +231,22 @@ nav img:first-child {
     filter: grayscale(100%) brightness(65%);
 }
 
+.list-playlist {
+    height: 80%;
+    overflow: auto;
+}
+
+.list-playlist-670px {
+    height: 42vh;
+}
+
+.nav-bottom-sec {
+    position: absolute;
+    bottom: 6rem;
+    left: 0;
+    height: 8rem;
+}
+
 .profile {
     border-radius: 50%;
     background-color: #808080;
@@ -258,7 +274,17 @@ nav img:first-child {
 }
 
 .evidenza {
-    border-bottom: 2px solid rgb(0, 149, 0);
+    position: relative;
+}
+
+.evidenza::after {
+    content: "";
+    position: absolute;
+    bottom: -0.3rem;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background-color: rgb(0, 149, 0);
 }
 
 section {
@@ -367,6 +393,8 @@ footer i {
 .top-center {
     position: relative;
     top: -1rem;
+    width: 80%;
+    align-self: center;
 }
 
 
@@ -575,5 +603,25 @@ nav .grey:hover {
     .song {
         width: 180px;
         height: 230px;
+    }
+}
+
+/* Scomparsa PLaylist */
+
+@media screen and (max-height: 1000px) {
+    .list-playlist {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    .list-playlist-670px {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    .nav-bottom-sec {
+        display: none;
     }
 }
