@@ -285,9 +285,21 @@ section h1 {
 }
 
 .song {
+    position: relative;
     width: 180px;
     height: 230px;
 }
+
+.playbutton {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: white;
+    opacity: 50%;
+}
+
 
 .song h2 {
     font-size: 1rem;
@@ -441,6 +453,10 @@ nav .grey:hover {
 
 .sez-music h2:hover {
     color: white;
+}
+
+.song:hover .playbutton {
+    display: block;
 }
 
 /* Media queries */
