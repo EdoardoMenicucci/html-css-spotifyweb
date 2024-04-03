@@ -36,6 +36,7 @@ button {
     flex-wrap: wrap;
 }
 
+
 .flex-center-left {
     display: flex;
     justify-content: flex-start;
@@ -43,11 +44,25 @@ button {
     flex-wrap: wrap;
 }
 
+.flex-center-left-nowrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
 .flex-center-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.flex-center-right-nowrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .flex-no-center {
@@ -68,7 +83,7 @@ button {
 }
 
 .shrink {
-    flex-shrink: 1;
+    flex-shrink: 2;
 }
 
 .text-center {
@@ -212,6 +227,10 @@ nav img:first-child {
     border-left: 2px solid rgb(0, 149, 0);
 }
 
+.grayscale {
+    filter: grayscale(100%) brightness(65%);
+}
+
 .profile {
     border-radius: 50%;
     background-color: #808080;
@@ -221,6 +240,10 @@ nav img:first-child {
     position: relative;
     left: -0.45rem;
     bottom: 0.8rem;
+}
+
+.line-height {
+    line-height: 2rem;
 }
 
 /* Main */
@@ -262,8 +285,8 @@ section h1 {
 }
 
 .song {
-    width: 200px;
-    height: 250px;
+    width: 180px;
+    height: 230px;
 }
 
 .song h2 {
@@ -290,7 +313,7 @@ footer {
 }
 
 .current-play {
-    width: 4rem;
+    width: 2.7rem;
     margin-right: 1rem;
 }
 
@@ -320,7 +343,7 @@ footer i {
 }
 
 .foot-left {
-    width: 33.3333%;
+    width: 30%;
 }
 
 .foot-center {
@@ -328,16 +351,11 @@ footer i {
     text-align: center;
 }
 
-.foot-center i {
-    padding: 0 0.8rem;
-    flex-shrink: 1;
-}
 
 .top-center {
     position: relative;
     top: -1rem;
 }
-
 
 
 .sez-progress-bar {
@@ -362,7 +380,7 @@ footer i {
 }
 
 .foot-right {
-    width: 33.3333%;
+    width: 30%;
 }
 
 .foot-right i {
@@ -393,7 +411,31 @@ nav .grey:hover {
     color: white;
 }
 
+.grey:hover .hov-white {
+    color: white;
+}
+
+.grey:hover .hov-white-bright {
+    filter: brightness(100%);
+}
+
+.grayscale:hover {
+    filter: brightness(100%);
+}
+
+.bg-grey:hover .plus {
+    background-color: white;
+}
+
+.bg-grey:hover .playlist {
+    color: white;
+}
+
 .playlist:hover .plus {
+    background-color: white;
+}
+
+.underline:hover .little {
     color: white;
 }
 
@@ -444,6 +486,10 @@ nav .grey:hover {
         font-size: 1.6rem;
     }
 
+    .search {
+        margin-top: 0.5rem;
+    }
+
     #big-logo {
         width: 10rem;
         margin-bottom: 1rem;
@@ -487,6 +533,10 @@ nav .grey:hover {
         margin-right: 0.5rem;
     }
 
+    .current-play {
+        width: 4rem;
+    }
+
 }
 
 
@@ -497,7 +547,11 @@ nav .grey:hover {
     }
 
     .top-center i {
-        font-size: 2rem;
+        font-size: 1.7rem;
+    }
+
+    .top-center .fa-circle-play {
+        font-size: 2.1rem;
     }
 }
 
