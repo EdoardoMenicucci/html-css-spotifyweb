@@ -318,7 +318,7 @@ section h1 {
 
 .playbutton {
     position: absolute;
-    top: 38%;
+    top: 42.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
@@ -616,8 +616,7 @@ footer .grey:hover {
 
 @media screen and (min-width: 1120px) {
     .song {
-        width: 210px;
-        height: 260px;
+        width: calc(13% - 1.5rem);
     }
 }
 
