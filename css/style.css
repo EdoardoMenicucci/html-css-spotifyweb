@@ -90,6 +90,14 @@ button {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
 .content-padding {
     padding: 1.5vh;
 }
