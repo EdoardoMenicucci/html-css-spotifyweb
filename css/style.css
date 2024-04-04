@@ -624,6 +624,12 @@ footer .grey:hover {
 
 @media screen and (min-width: 1120px) {
     .song {
+        width: calc(16% - 1.5rem);
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .song {
         width: calc(13% - 1.5rem);
     }
 }
