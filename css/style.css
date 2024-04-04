@@ -122,6 +122,10 @@ h4 {
     display: none;
 }
 
+.no-xs:before {
+    display: none;
+}
+
 .no-xs-inline {
     display: none;
 }
@@ -165,7 +169,7 @@ main {
     background-color: #141922;
     height: calc(100vh - 12rem);
     margin-left: 3.5rem;
-    border: 2px solid #141922;
+    border: 5px solid #141922;
     overflow: auto;
 
 }
@@ -223,10 +227,6 @@ nav img:first-child {
     margin-top: 0;
 }
 
-.home {
-    border-left: 2px solid rgb(0, 149, 0);
-}
-
 .grayscale {
     filter: grayscale(100%) brightness(65%);
 }
@@ -273,11 +273,12 @@ nav img:first-child {
     margin: 1rem 0.7rem;
 }
 
-.evidenza {
+.enlight {
     position: relative;
 }
 
-.evidenza::after {
+.enlight::after {
+    display: none;
     content: "";
     position: absolute;
     bottom: -0.3rem;
@@ -312,8 +313,7 @@ section h1 {
 
 .song {
     position: relative;
-    width: 180px;
-    height: 230px;
+    width: calc(50% - 1rem);
 }
 
 .playbutton {
@@ -424,7 +424,7 @@ footer i {
 }
 
 .foot-right i {
-    padding: 0.5rem 0.2rem;
+    padding: 0.5rem 0.3rem;
 }
 
 .sez-progress-bar-audio {
@@ -451,6 +451,10 @@ nav .grey:hover {
     color: white;
 }
 
+footer .grey:hover {
+    color: white;
+}
+
 .grey:hover .hov-white {
     color: white;
 }
@@ -463,12 +467,20 @@ nav .grey:hover {
     filter: brightness(100%);
 }
 
+.left-border:hover {
+    border-left: 2px solid rgb(0, 149, 0);
+}
+
 .bg-grey:hover .plus {
     background-color: white;
 }
 
 .bg-grey:hover .playlist {
     color: white;
+}
+
+.enlight:hover .enlight::after {
+    display: block;
 }
 
 .playlist:hover .plus {
@@ -497,6 +509,10 @@ nav .grey:hover {
     }
 
     .no-xs {
+        display: block;
+    }
+
+    .no-xs:before {
         display: block;
     }
 
@@ -537,11 +553,6 @@ nav .grey:hover {
     #big-logo {
         width: 10rem;
         margin-bottom: 1rem;
-    }
-
-    .song {
-        width: 160px;
-        height: 210px;
     }
 
     .plus {
@@ -597,12 +608,16 @@ nav .grey:hover {
     .top-center .fa-circle-play {
         font-size: 2.1rem;
     }
+
+    .song {
+        width: calc(33% - 0.7rem);
+    }
 }
 
 @media screen and (min-width: 1120px) {
     .song {
-        width: 180px;
-        height: 230px;
+        width: 210px;
+        height: 260px;
     }
 }
 
